@@ -1,0 +1,63 @@
+{
+  "id": "fAxbGgvFuo4NSc9s",
+  "name": "My workflow 2",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "1fd814b8-60db-4619-9fb9-249caece4bad",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "url": "https://api.ipify.org/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "c686f718-513a-4ce3-ad4f-8e8b2c8fb582",
+      "name": "DOR"
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "DOR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "4dfa035b-e205-469f-b625-fb1810c1ea7b",
+  "owner": {
+    "type": "personal",
+    "projectId": "lAb6YmUkWDicxS8y",
+    "projectName": "Israel Cohen <il90il90@gmail.com>",
+    "personalEmail": "il90il90@gmail.com"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}
